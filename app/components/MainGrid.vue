@@ -2,28 +2,33 @@
   <div class="container-fluid">
     <h1>Sober</h1>
     <div>
-      <a class="btn btn-primary" href="#" id="float" @click.prevent="toggleFloat">
+      <a
+        class="btn btn-primary"
+        href="#"
+        id="float"
+        @click.prevent="toggleFloat"
+      >
         float: {{ isFloat }}
       </a>
     </div>
-    <br><br>
+    <br /><br />
 
     <!-- Widgets manuales -->
     <div ref="gridRef" class="grid-stack">
-      <div class="grid-stack-item" gs-x="0" gs-y="0" gs-w="2" gs-h="2">
-        <div class="grid-stack-item-content" style="background-color:#18bc9c">
-          Widget A
+      <div class="grid-stack-item" gs-x="0" gs-y="0" gs-w="4" gs-h="2">
+        <div class="grid-stack-item-content" style="background-color: #18bc9c">
+          <ButtonView />
         </div>
       </div>
 
-      <div class="grid-stack-item" gs-x="2" gs-y="0" gs-w="3" gs-h="1">
-        <div class="grid-stack-item-content" style="background-color:#3498db">
+      <div class="grid-stack-item" gs-x="4" gs-y="0" gs-w="4" gs-h="2">
+        <div class="grid-stack-item-content" style="background-color: #3498db">
           Widget B
         </div>
       </div>
 
-      <div class="grid-stack-item" gs-x="0" gs-y="2" gs-w="4" gs-h="2">
-        <div class="grid-stack-item-content" style="background-color:#e74c3c">
+      <div class="grid-stack-item" gs-x="8" gs-y="0" gs-w="4" gs-h="2">
+        <div class="grid-stack-item-content" style="background-color: #e74c3c">
           Widget C
         </div>
       </div>
