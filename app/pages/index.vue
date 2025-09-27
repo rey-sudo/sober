@@ -1,13 +1,7 @@
 <template>
-    <div>
-        xx
-    </div>
+  <MainGrid />
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>
