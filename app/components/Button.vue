@@ -6,10 +6,6 @@
     :disabled="disabled"
   >
     <div class="Button-body flex">
-      <div class="slot" :class="{ icon }">
-        <slot name="icon" />
-      </div>
-
       <span class="loader" v-if="loading" />
       <span class="label" v-if="!loading">{{ label }}</span>
     </div>
@@ -37,11 +33,7 @@ const props = defineProps({
   loading: {
     type: Boolean,
     default: false,
-  },
-  icon: {
-    type: Boolean,
-    default: false,
-  },
+  }
 });
 defineEmits(["click"]);
 
@@ -106,11 +98,11 @@ const sizeClass = computed(() => {
 
 .btn-mini {
   padding: 0.5rem 1rem;
-  font-size: var(--font-size-0);
+  font-size: var(--font-size-1);
 }
 
 .btn-mid {
-  font-size: var(--font-size-0);
+  font-size: var(--font-size-1);
   padding: 0.75rem 1rem;
 }
 
@@ -140,7 +132,4 @@ const sizeClass = computed(() => {
   }
 }
 
-.icon {
-  margin-right: 0.5rem;
-}
 </style>
