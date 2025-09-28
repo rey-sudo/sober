@@ -42,3 +42,9 @@ onMounted(() => {
   );
 });
 </script>
+
+<style scoped>
+.grid-stack-item {
+  border: 1px solid gray;
+}
+</style>
