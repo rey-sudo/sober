@@ -13,24 +13,16 @@ body {
   --divider-color: rgba(255, 255, 255, 0.1);
   --border-color: rgba(255, 255, 255, 0.5);
 
-  --font-size-0: 0.8rem;
-  /* 12.8px */
-  --font-size-1: 0.96rem;
-  /* 15.36px */
-  --font-size-2: 1.15rem;
-  /* 18.4px */
-  --font-size-3: 1.38rem;
-  /* 22.08px */
-  --font-size-4: 1.66rem;
-  /* 26.56px */
-  --font-size-5: 2rem;
-  /* 32px */
-  --font-size-6: 2.4rem;
-  /* 38.4px */
-  --font-size-7: 2.88rem;
-  /* 46.08px */
-  --font-size-8: 3.46rem;
-  /* 55.36px */
+  --font-size-0: 0.694rem;
+  --font-size-1: 0.833rem;
+  --font-size-2: 1rem;
+  --font-size-3: 1.2rem;
+  --font-size-4: 1.44rem;
+  --font-size-5: 1.728rem;
+  --font-size-6: 2.074rem;
+  --font-size-7: 2.488rem;
+  --font-size-8: 2.986rem;
+
 
   --font-color-0: #ffffff;
   --font-color-1: #4d4d4d;

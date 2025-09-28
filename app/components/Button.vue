@@ -63,6 +63,7 @@ const sizeClass = computed(() => {
   border: 1px solid var(--primary-a);
   transition: var(--transition-a);
   padding: var(--button-padding);
+  font-size: var(--font-size-0);
   color: var(--font-color-0);
   background: var(--black-0);
   justify-content: center;
@@ -105,17 +106,17 @@ const sizeClass = computed(() => {
 
 .btn-mini {
   padding: 0.5rem 1rem;
-  font-size: var(--text-size-0);
+  font-size: var(--font-size-0);
 }
 
 .btn-mid {
-  font-size: var(--text-size-1);
+  font-size: var(--font-size-0);
   padding: 0.75rem 1rem;
 }
 
 .btn-large {
   padding: 1rem;
-  font-size: var(--text-size-1);
+  font-size: var(--font-size-1);
 }
 
 .loader {

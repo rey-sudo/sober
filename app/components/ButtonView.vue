@@ -1,6 +1,6 @@
 <template>
   <div class="button-view">
-    <Button />
+    <Button label="Save"/>
   </div>
 </template>
 
