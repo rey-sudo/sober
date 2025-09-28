@@ -7,7 +7,7 @@
   >
     <div class="Button-body flex">
       <span class="loader" v-if="loading" />
-      <span class="label" v-if="!loading">{{ label }}</span>
+      <span class="label" :class="{ hidden: loading }">{{ label }}</span>
     </div>
   </button>
 </template>
@@ -33,8 +33,9 @@ const props = defineProps({
   loading: {
     type: Boolean,
     default: false,
-  }
+  },
 });
+
 defineEmits(["click"]);
 
 const sizeClass = computed(() => {
@@ -53,6 +54,7 @@ const sizeClass = computed(() => {
 .Button {
   border-radius: var(--button-radius);
   border: 1px solid var(--primary-a);
+    box-shadow: var(--button-shadow);
   transition: var(--transition-a);
   padding: var(--button-padding);
   font-size: var(--font-size-0);
@@ -66,7 +68,7 @@ const sizeClass = computed(() => {
 }
 
 .Button:hover {
-  background: var(--primary-b);
+  opacity: 0.8;
 }
 
 .Button.disabled {
@@ -77,6 +79,7 @@ const sizeClass = computed(() => {
 
 .Button-body {
   align-items: center;
+  position: relative;
   display: flex;
 }
 
@@ -96,6 +99,10 @@ const sizeClass = computed(() => {
   pointer-events: none;
 }
 
+.label.hidden {
+  opacity: 0;
+}
+
 .btn-mini {
   padding: 0.5rem 1rem;
   font-size: var(--font-size-1);
@@ -112,8 +119,11 @@ const sizeClass = computed(() => {
 }
 
 .loader {
+  left: 25%;
+  right: 25%;
   width: 1rem;
   height: 1rem;
+  position: absolute;
   border: 2px solid #fff;
   border-radius: 50%;
   display: inline-block;
@@ -131,5 +141,4 @@ const sizeClass = computed(() => {
     transform: rotate(360deg);
   }
 }
-
 </style>

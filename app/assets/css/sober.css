@@ -31,10 +31,15 @@ body {
 
   --primary-0: blue;
 
-  --button-radius: 12px;
-  --button-padding: 1rem;
+
 }
 
 :root {
   --black-0: #000000;
+}
+
+:root{
+  --button-radius: 12px;
+  --button-padding: 1rem;
+  --button-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
