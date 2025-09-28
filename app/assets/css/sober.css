@@ -28,7 +28,7 @@ body {
 
   --background-0: #ffffff;
 
-  --primary-0: blue;
+  --primary-0: black;
 }
 
 :root {
@@ -38,6 +38,7 @@ body {
 :root {
   --button-radius: 12px;
   --button-padding: 1rem;
+  --button-background: var(--primary-0); 
   --button-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   --button-hover-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   --button-transition: background-color 0.25s ease, box-shadow 0.25s ease,

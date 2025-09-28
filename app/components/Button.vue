@@ -52,14 +52,14 @@ const sizeClass = computed(() => {
 
 <style scoped>
 .Button {
-    transition: var(--button-transition);
+  transition: var(--button-transition);
+  background: var(--button-background);
   border-radius: var(--button-radius);
   border: 1px solid var(--primary-a);
   box-shadow: var(--button-shadow);
   padding: var(--button-padding);
   font-size: var(--font-size-0);
   color: var(--font-color-0);
-  background: var(--black-0);
   justify-content: center;
   align-items: center;
   font-weight: bold;
