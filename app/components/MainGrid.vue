@@ -1,22 +1,10 @@
 <template>
   <div class="container-fluid">
-    <h1>Sober</h1>
-    <div>
-      <a
-        class="btn btn-primary"
-        href="#"
-        id="float"
-        @click.prevent="toggleFloat"
-      >
-        float: {{ isFloat }}
-      </a>
-    </div>
-    <br /><br />
+    <h1>Sober UI components</h1>
 
-    <!-- Widgets manuales -->
     <div ref="gridRef" class="grid-stack">
       <div class="grid-stack-item" gs-x="0" gs-y="0" gs-w="4" gs-h="2">
-        <div class="grid-stack-item-content" style="background-color: #18bc9c">
+        <div class="grid-stack-item-content">
           <ButtonView />
         </div>
       </div>
@@ -43,13 +31,6 @@ import "gridstack/dist/gridstack.css";
 
 const gridRef = ref(null);
 let grid;
-
-const isFloat = ref(true);
-
-function toggleFloat() {
-  grid.float(!grid.getFloat());
-  isFloat.value = grid.getFloat();
-}
 
 onMounted(() => {
   grid = GridStack.init(
