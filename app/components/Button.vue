@@ -52,10 +52,10 @@ const sizeClass = computed(() => {
 
 <style scoped>
 .Button {
+    transition: var(--button-transition);
   border-radius: var(--button-radius);
   border: 1px solid var(--primary-a);
-    box-shadow: var(--button-shadow);
-  transition: var(--transition-a);
+  box-shadow: var(--button-shadow);
   padding: var(--button-padding);
   font-size: var(--font-size-0);
   color: var(--font-color-0);
@@ -69,6 +69,7 @@ const sizeClass = computed(() => {
 
 .Button:hover {
   opacity: 0.8;
+  box-shadow: var(--button-hover-shadow);
 }
 
 .Button.disabled {

@@ -10,13 +10,13 @@
       </div>
 
       <div class="grid-stack-item" gs-x="4" gs-y="0" gs-w="4" gs-h="2">
-        <div class="grid-stack-item-content" style="background-color: #3498db">
+        <div class="grid-stack-item-content">
           Widget B
         </div>
       </div>
 
       <div class="grid-stack-item" gs-x="8" gs-y="0" gs-w="4" gs-h="2">
-        <div class="grid-stack-item-content" style="background-color: #e74c3c">
+        <div class="grid-stack-item-content">
           Widget C
         </div>
       </div>

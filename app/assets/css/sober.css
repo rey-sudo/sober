@@ -23,23 +23,23 @@ body {
   --font-size-7: 2.488rem;
   --font-size-8: 2.986rem;
 
-
   --font-color-0: #ffffff;
   --font-color-1: #4d4d4d;
 
   --background-0: #ffffff;
 
   --primary-0: blue;
-
-
 }
 
 :root {
   --black-0: #000000;
 }
 
-:root{
+:root {
   --button-radius: 12px;
   --button-padding: 1rem;
   --button-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --button-hover-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --button-transition: background-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.25s ease;
 }
