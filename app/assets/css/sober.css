@@ -39,8 +39,7 @@ body {
   --button-radius: 12px;
   --button-padding: 1rem;
   --button-background: var(--primary-0); 
-  --button-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --button-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --button-hover-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  --button-transition: background-color 0.25s ease, box-shadow 0.25s ease,
-    transform 0.25s ease;
+  --button-transition: 0.3s ease;
 }

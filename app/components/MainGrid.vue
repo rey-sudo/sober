@@ -11,14 +11,12 @@
 
       <div class="grid-stack-item" gs-x="4" gs-y="0" gs-w="4" gs-h="2">
         <div class="grid-stack-item-content">
-          Widget B
+          <InputTextView />
         </div>
       </div>
 
       <div class="grid-stack-item" gs-x="8" gs-y="0" gs-w="4" gs-h="2">
-        <div class="grid-stack-item-content">
-          Widget C
-        </div>
+        <div class="grid-stack-item-content">Widget C</div>
       </div>
     </div>
   </div>
