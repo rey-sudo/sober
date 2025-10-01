@@ -2,10 +2,15 @@
   <button
     class="Button"
     :class="[{ disabled, outlined }, sizeClass]"
+    :style="{
+      color: textColor,
+      background: backgroundColor,
+      border: `1px solid ${borderColor}`,
+    }"
     @click="$emit('click')"
     :disabled="disabled"
   >
-    <div class="Button-body flex">
+    <div class="Button-content">
       <span class="loader" v-if="loading" />
       <span class="label" :class="{ hidden: loading }">{{ label }}</span>
     </div>
@@ -13,6 +18,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed, defineProps, defineEmits } from "vue";
+
 const props = defineProps({
   size: {
     type: String as PropType<"mini" | "mid" | "large">,
@@ -29,6 +36,18 @@ const props = defineProps({
   outlined: {
     type: Boolean,
     default: false,
+  },
+  backgroundColor: {
+    type: String,
+    default: "#000000",
+  },
+  textColor: {
+    type: String,
+    default: "#ffffff",
+  },
+  borderColor: {
+    type: String,
+    default: "#ffffff",
   },
   loading: {
     type: Boolean,
@@ -55,7 +74,6 @@ const sizeClass = computed(() => {
   transition: var(--button-transition);
   background: var(--button-background);
   border-radius: var(--button-radius);
-  border: 1px solid var(--primary-a);
   box-shadow: var(--button-shadow);
   padding: var(--button-padding);
   font-size: var(--font-size-0);
@@ -78,7 +96,7 @@ const sizeClass = computed(() => {
   border: 1px solid var(--primary-b);
 }
 
-.Button-body {
+.Button-content {
   align-items: center;
   position: relative;
   display: flex;

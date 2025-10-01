@@ -1,8 +1,8 @@
 <template>
   <div class="button-view">
-    <Button label="Save" :loading="isLoading" @click="onClick" />
+    <Button label="Save" :loading="isLoading" borderColor="gray" backgroundColor="transparent" textColor="gray" @click="onClick" />
   </div>
-</template>
+</template> 
 
 <script setup>
 const isLoading = ref(false);

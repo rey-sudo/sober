@@ -1,18 +1,30 @@
 {
-  "name": "nuxt-app",
+  "name": "@lovelacers/sober",
   "type": "module",
-  "private": true,
+  "version": "0.1.7",
+  "private": false,
+  "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "publish": "npm publish --access public"
   },
   "dependencies": {
     "gridstack": "^12.3.3",
     "nuxt": "^4.1.2",
     "vue": "^3.5.21",
     "vue-router": "^4.5.1"
+  },
+  "files": [
+    "nuxt",
+    "app"
+  ],
+  "exports": {
+    ".": {
+      "import": "./nuxt/module.ts"
+    }
   }
 }
