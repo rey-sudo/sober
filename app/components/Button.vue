@@ -11,7 +11,11 @@
     :disabled="disabled"
   >
     <div class="Button-content">
-      <span class="loader" v-if="loading" />
+      <span
+        v-if="loading"
+        class="loader"
+        :style="{ borderColor: borderColor}"
+      />
       <span class="label" :class="{ hidden: loading }">{{ label }}</span>
     </div>
   </button>
@@ -43,11 +47,11 @@ const props = defineProps({
   },
   textColor: {
     type: String,
-    default: "#ffffff",
+    default: "#000000",
   },
   borderColor: {
     type: String,
-    default: "#ffffff",
+    default: "#000000",
   },
   loading: {
     type: Boolean,
@@ -143,7 +147,7 @@ const sizeClass = computed(() => {
   width: 1rem;
   height: 1rem;
   position: absolute;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
