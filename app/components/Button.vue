@@ -83,6 +83,7 @@ const sizeClass = computed(() => {
   font-size: var(--font-size-0);
   color: var(--font-color-0);
   justify-content: center;
+  white-space: nowrap;
   align-items: center;
   font-weight: bold;
   cursor: pointer;
