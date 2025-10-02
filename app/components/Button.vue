@@ -14,7 +14,7 @@
       <span
         v-if="loading"
         class="loader"
-        :style="{ borderColor: borderColor}"
+        :style="{ borderColor: borderColor }"
       />
       <span class="label" :class="{ hidden: loading }">{{ label }}</span>
     </div>
@@ -128,17 +128,17 @@ const sizeClass = computed(() => {
 }
 
 .btn-mini {
-  padding: 0.5rem 1rem;
+  padding: var(--button-padding);
   font-size: var(--font-size-1);
 }
 
 .btn-mid {
   font-size: var(--font-size-1);
-  padding: 0.75rem 1rem;
+  padding: var(--button-padding);
 }
 
 .btn-large {
-  padding: 1rem;
+  padding: var(--button-padding);
   font-size: var(--font-size-1);
 }
 
