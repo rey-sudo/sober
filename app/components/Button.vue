@@ -81,6 +81,7 @@ const sizeClass = computed(() => {
   box-shadow: var(--button-shadow);
   padding: var(--button-padding);
   font-size: var(--font-size-0);
+  border: 1px solid transparent;
   color: var(--font-color-0);
   justify-content: center;
   white-space: nowrap;
