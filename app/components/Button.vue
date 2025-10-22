@@ -97,8 +97,8 @@ const sizeClass = computed(() => {
 
 .Button.disabled {
   pointer-events: none;
-  background: var(--primary-b);
-  border: 1px solid var(--primary-b);
+  background: var(--primary-1);
+  border: 1px solid var(--primary-1);
 }
 
 .Button-content {
@@ -108,14 +108,14 @@ const sizeClass = computed(() => {
 }
 
 .Button.outlined {
-  border: 1px solid var(--primary-a);
+  border: 1px solid var(--primary-0);
   background: transparent;
-  color: var(--primary-a);
+  color: var(--primary-0);
 }
 
 .Button.outlined:hover {
-  border: 1px solid var(--primary-a);
-  background: var(--primary-a);
+  border: 1px solid var(--primary-0);
+  background: var(--primary-0);
   color: var(--text-w);
 }
 
